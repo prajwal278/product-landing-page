@@ -63,7 +63,7 @@ a {
     header {
         justify-content: center;
         min-height: 85px;
-        margin: 10px 0;
+        margin: 0 10px;
     }
 }
 
