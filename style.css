@@ -1,0 +1,267 @@
+:root {
+    --main: #fcfcfc;
+    --color1: #262223;
+    --color2: #582427;
+    --color3: #8a272c;
+    --color4: #bc2a31;
+}
+
+* {
+    background: var(--main);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+#page-weapper {
+    position: relative;
+    margin-top: 75px;
+}
+
+/*------- navigation bar ---------*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+}
+
+.logo img {
+    width: max(8vw, 250px);
+    height: auto;
+}
+
+#nav-bar {
+    width: max(10vw, 450px);
+    margin-right: 30px;
+}
+
+#nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color1);
+}
+
+@media (max-width: 720px) {
+    header {
+        justify-content: center;
+        min-height: 85px;
+        margin: 10px 0;
+    }
+}
+
+/* ---------- Hero section ---------- */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+@media (max-width: 720px) {
+    #hero {
+        margin-top: 110px;
+    }
+}
+
+#hero>h2 {
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    font-size: 1.7rem;
+}
+
+#hero input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    background: #ffffff;
+    font-size: 16px;
+}
+
+#hero input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    border: 0;
+}
+
+.btn {
+    padding: 0 auto;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    margin: 15px 0;
+    background-color: var(--color4);
+    color: #ffeeee;
+}
+
+#container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ---------- Feature section ---------- */
+
+#features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+i {
+    color: var(--color4);
+    text-align: center;
+}
+
+.feature_section {
+    display: flex;
+    flex-direction: row;
+}
+
+#icon {
+    width: 65px;
+}
+
+.disc {
+    width: 100%;
+    height: 125px;
+    text-align: left;
+    margin: auto;
+    padding: 0 50px;
+}
+
+.disc>h2 {
+    font-size: 1.5em;
+}
+
+@media (max-width: 720px) {
+    #icon {
+        width: 0;
+    }
+}
+
+/* ------------ How to work ---------- */
+
+#how-to-work {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ------------- Pricing ----------- */
+#pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 1.5);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.card>div {
+    background: #dacaca;
+    color: #000;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 700;
+}
+
+.card>h2 {
+    margin-top: 15px;
+    font-size: 1.6em
+}
+
+.card>ol {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.card>ol>li {
+    padding: 7px 0;
+}
+
+.card>button {
+    border: 0;
+    margin: 15px 0;
+    background-color: var(--color4);
+    font-weight: 400;
+    padding: 15px 30px;
+    color: #ffeeee;
+}
+
+@media (max-width:800px) {
+    #pricing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* ---------- footer ---------- */
+footer {
+    margin-top: 30px;
+    background: #dacaca;
+    padding: 10px 25px;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    background: inherit;
+}
+
+footer>ul>li {
+    padding: 0 10px;
+    background: inherit;
+}
+
+footer>ul>li>a {
+    text-decoration: none;
+    color: #000;
+    background: inherit;
+}
+
+footer>span {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    background: inherit;
+}
